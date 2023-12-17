@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:clickable="true"
+    android:paddingBottom="@dimen/row_padding"
+    android:paddingLeft="@dimen/activity_margin"
+    android:paddingRight="@dimen/activity_margin"
+    android:paddingTop="@dimen/row_padding">
+
+    <ImageView
+        android:id="@+id/thumbnail"
+        android:layout_width="@dimen/thumbnail"
+        android:layout_height="45dp"
+        android:src="@drawable/ic_place_marker"
+        android:tint="@color/grey"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/row_padding" />
+
+    <TextView
+        android:id="@+id/txtname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="name not found"
+        android:layout_toRightOf="@id/thumbnail"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="#333333"
+        android:textSize="@dimen/contact_name" />
+
+    <TextView
+        android:id="@+id/txtlevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtname"
+        android:text="level not found"
+        android:layout_toRightOf="@id/thumbnail"
+        android:textColor="#8c8c8c"
+        android:textSize="@dimen/contact_number" />
+
+</RelativeLayout>
